@@ -8,4 +8,7 @@ abstract Square(String) from String {
     public var rank(get, never):String;
     inline function get_rank() return this.charAt(1);
 
+    public var rankInt(get, never):Int;
+    inline function get_rankInt() return this.charCodeAt(1) - 48;
+
 }
