@@ -16,6 +16,11 @@ extern class Chess {
     public function moves(?options:{ verbose:Bool }):EitherType<Array<String>, Array<Move>>;
     public function turn():String;
     public function game_over():Bool;
+    public function in_checkmate():Bool;
+    public function in_draw():Bool;
+    public function in_stalemate():Bool;
+    public function in_threefold_repetition():Bool;
+    public function insufficient_material():Bool;
     public function clear(keepHeader:Bool):Void;
     
 }
